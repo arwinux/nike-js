@@ -5,7 +5,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nike</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
 </head>
+
+<header>
+  <div class="topheader w-100 d-none d-lg-flex justify-content-between align-items-center">
+    <div class="brandlist w-50 h-100 d-flex justify-content-start align-items-center">
+      <div class="brands d-flex gap-4 justify-content-center align-items-center">
+        <a class="brand" href="#"><img src="./assets/images/brands/brand1.svg" alt=""></a>
+        <a class="brand" href="#"><img src="./assets/images/brands/brand2.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="menu w-50 d-flex justify-content-end gap-3 align-content-center">
+      <a class="text-decoration-none text-dark menulink" href="">Find a Store</a>
+
+      <div class="help-container">
+        <a class="text-decoration-none text-dark help-link menulink" href="#">Help</a>
+        <div class="help-menu">
+          <a class="hmenu" href="">Help</a>
+          <a href="">Order Status</a>
+          <a href="">Dispatch and Delivery</a>
+          <a href="">Returns</a>
+          <a href="">Contact Us</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Sale</a>
+          <a href="">Terms of Use</a>
+          <a href="">Send Us Feedback</a>
+
+
+        </div>
+      </div>
+
+      <a class="text-decoration-none text-dark menulink" href="">Join Us</a>
+      <a class="text-decoration-none text-dark menulink" href="">Sign In</a>
+    </div>
+  </div>
+  <div class="mainheader bg-white d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <img class="" src="./assets/images/logoblack.jpeg" alt="">
+    </div>
+
+    <nav class="categories d-none d-md-flex justify-content-center align-items-center">
+      <ul class="d-flex none navbar-nav flex-row justify-content-center align-items-center gap-4">
+        <li><a class="text-decoration-none text-dark category" href="">New</a></li>
+        <li><a class="text-decoration-none text-dark category" href="">Men</a></li>
+        <li><a class="text-decoration-none text-dark category" href="">Women</a></li>
+        <li><a class="text-decoration-none text-dark category" href="">Kids</a></li>
+        <li><a class="text-decoration-none text-dark category" href="">Jordan</a></li>
+        <li><a class="text-decoration-none text-dark category" href="">Sale</a></li>
+      </ul>
+    </nav>
+
+    <div class="productscontrol d-flex gap-4 justify-content-end align-items-center">
+      <div class="searchandinput h-100 rounded-5 d-flex justify-content-center align-content-center">
+        <a class="search d-flex justify-content-center align-content-center">
+          <img class="rounded-5 w-75" src="./assets/images/header/search.svg" alt="">
+        </a>
+        <input class="border-0 rounded-end-5" placeholder="Search" type="text" name="" id="">
+      </div>
+      <div class="controls d-flex justify-content-center align-items-center">
+        <a class="control rounded-circle d-flex justify-content-center align-content-center" href="#">
+          <img class="w-100" src="./assets/images/header/favorite.svg" alt="">
+        </a>
+        <a class="control rounded-circle d-flex justify-content-center align-content-center" href="#">
+          <img class="w-100" src="./assets/images/header/cart.svg" alt="">
+        </a>
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-end" id="demo">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="categories d-flex justify-content-start align-items-center">
+              <ul class="d-flex none navbar-nav flex-column justify-content-center align-items-start gap-4">
+                <li><a class="text-decoration-none text-dark category h3" href="">New</a></li>
+                <li><a class="text-decoration-none text-dark category h3" href="">Men</a></li>
+                <li><a class="text-decoration-none text-dark category h3" href="">Women</a></li>
+                <li><a class="text-decoration-none text-dark category h3" href="">Kids</a></li>
+                <li><a class="text-decoration-none text-dark category h3" href="">Jordan</a></li>
+                <li><a class="text-decoration-none text-dark category h3" href="">Sale</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Button to open the offcanvas sidebar -->
+        <a class="control rounded-circle d-flex justify-content-center align-content-center d-md-none d-flex"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" href="#">
+          <img class="w-100" src="./assets/images/header/menu.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="glassbackground w-100 vh-100">
+    <div class="categoriessubmenu w-100 bg-white d-flex justify-content-center align-items-start">
+      <div class="sub d-flex w-75 bg-white flex-wrap justify-content-center align-items-start">
+        <div class="submenu d-flex flex-wrap flex-column justify-content-center align-items-start">
+          <div class=" align-self-start h4">New</div>
+          <div class="submenustitles d-flex gap-2 flex-wrap flex-column justify-content-center align-items-start">
+            <a class="text-decoration-none" href="">New Arrivals</a>
+            <a class="text-decoration-none" href="">Best Sellers</a>
+            <a class="text-decoration-none" href="">Latest Drops</a>
+            <a class="text-decoration-none" href="">SNKRS Launch Calendar</a>
+            <a class="text-decoration-none" href="">AJ11 "LNY" & More</a>
+          </div>
+        </div>
+        <div class="submenu d-flex flex-column justify-content-start align-items-start">
+          <div class=" align-self-start h4">Trending</div>
+          <div class="submenustitles d-flex gap-2 flex-wrap flex-column justify-content-center align-items-start">
+            <a class="text-decoration-none" href="">ACG Essentials</a>
+            <a class="text-decoration-none" href="">Retro Running</a>
+            <a class="text-decoration-none" href="">Nike Style By</a>
+            <a class="text-decoration-none" href="">Shop Sport</a>
+          </div>
+        </div>
+        <div class="submenu d-flex flex-column justify-content-start align-items-start">
+          <div class=" align-self-start h4">Shop Classics</div>
+          <div class="submenustitles d-flex gap-2 flex-wrap flex-column justify-content-center align-items-start">
+            <a class="text-decoration-none" href="">Dunk</a>
+            <a class="text-decoration-none" href="">Air Jordan 1</a>
+            <a class="text-decoration-none" href="">Air Force</a>
+            <a class="text-decoration-none" href="">Air Max</a>
+            <a class="text-decoration-none" href="">Blazer</a>
+            <a class="text-decoration-none" href="">Vomero</a>
+          </div>
+        </div>
+        <div class="submenu d-flex flex-column justify-content-start align-items-start">
+          <div class=" align-self-start h4">Explore</div>
+          <div class="submenustitles d-flex gap-1 flex-wrap flex-column justify-content-center align-items-start">
+            <a class="text-decoration-none" href="">Bra Finder</a>
+            <a class="text-decoration-none" href="">Product Care</a>
+            <a class="text-decoration-none" href="">Member Rewards</a>
+            <a class="text-decoration-none" href="">Buying Guides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</header>
 
 <body>
 
