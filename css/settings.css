@@ -17,3 +17,8 @@
   font-family: nikeheavy;
   src: url("../assets/fonts/nike/FuturaHeavy.ttf");
 }
+
+@font-face {
+  font-family: nikefuturand;
+  src: url("../assets/fonts/nike/NikeFuturaND.ttf");
+}

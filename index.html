@@ -147,7 +147,110 @@
 </header>
 
 <body>
+  <section>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
+          <video class="" user-select-none muted autoplay src="./assets/videos/slide1.mp4"></video>
+          <div
+            class="titleanddescriptionbtn mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
+            <div class="title">
+              <p class="m-0 p-0">GET COMFORTABLE WITH WINNING</p>
+            </div>
+            <div class="description">
+              <p>Comfort you want with support you need to power your wins.</p>
+            </div>
+            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
+          </div>
+        </div>
+        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
+          <img class="" src="./assets/images/slider/slide2.jpeg" alt="">
+          <div
+            class="titleanddescriptionbtn  mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
+            <div class="title">
+              <p class="m-0 p-0">NIKE RUNNING'S LATEST</p>
+            </div>
+            <div class="description">
+              <p>Everything you'll need for every mile.</p>
+            </div>
+            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
+          </div>
+        </div>
+        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
+          <img class="" src="./assets/images/slider/slide3.jpeg" alt="">
+          <div
+            class="titleanddescriptionbtn mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
+            <div class="title">
+              <p class="m-0 p-0">FEEL MORE ALIVE</p>
+            </div>
+            <div class="description">
+              <p>Get outside in adventure-ready gear from ACG.</p>
+            </div>
+            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
+          </div>
+        </div>
+        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
+          <img class="" src="./assets/images/slider/slide4.jpeg" alt="">
+          <div
+            class="titleanddescriptionbtn mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
+            <div class="title">
+              <p class="m-0 p-0">JORDAN HEIR SERIES</p>
+            </div>
+            <div class="description">
+              <p>Run, defend, and cut with confidence in Jordan’s lowest profile hoops style.</p>
+            </div>
+            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
+          </div>
+        </div>
 
+      </div>
+      <div class="autoplay-progress d-flex justify-content-center align-items-center gap-4">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+
+        <!-- Resume carousel autoplay -->
+        <span></span>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
