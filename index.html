@@ -295,6 +295,101 @@
       </div>
     </div>
 
+    <div class="categories d-none d-sm-flex flex-column justify-content-center align-items-center">
+      <div class="nikelogo d-flex justify-content-center align-items-center">
+        <img class="w-100" src="./assets/images/logoblack.jpeg" alt="">
+      </div>
+      <div class="menu">
+        <div class="headermenu d-flex justify-content-center align-items-center gap-4">
+          <a class="text-decoration-none text-dark menulink" href="">Find a Store</a>
+          <a class="text-decoration-none text-dark menulink" href="">Help</a>
+          <a class="text-decoration-none text-dark menulink" href="">Join Us</a>
+          <a class="text-decoration-none text-dark menulink" href="">Sign In</a>
+        </div>
+
+        <div class="categoriesmenu d-flex justify-content-center align-items-start">
+          <div
+            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
+            href="">
+            <a class="text-decoration-none text-black" href="">Featured</a>
+            <a class="text-decoration-none" href="">Air Force 1</a>
+            <a class="text-decoration-none" href="">Jordan 1</a>
+            <a class="text-decoration-none" href="">Metcon</a>
+            <a class="text-decoration-none" href="">Air Max 270</a>
+            <a class="text-decoration-none" href="">Air Max 97</a>
+            <a class="text-decoration-none" href="">Air Max 90</a>
+            <a class="text-decoration-none" href="">Blazer</a>
+            <a class="text-decoration-none" href="">Pegasus</a>
+          </div>
+          <div
+            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
+            href="">
+            <a class="text-decoration-none text-black" href="">Shoes</a>
+            <a class="text-decoration-none" href="">All Shoes</a>
+            <a class="text-decoration-none" href="">Jordan Shoes</a>
+            <a class="text-decoration-none" href="">Running Shoes</a>
+            <a class="text-decoration-none" href="">Basketball Shoes</a>
+            <a class="text-decoration-none" href="">Tennis Shoes</a>
+            <a class="text-decoration-none" href="">Training Shoes</a>
+            <a class="text-decoration-none" href="">Custom Shoes</a>
+            <a class="text-decoration-none" href="">Sale Shoes</a>
+            <a class="text-decoration-none" href="">Soccer Cleats</a>
+          </div>
+          <div
+            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
+            href="">
+            <a class="text-decoration-none" href="">Clothing</a>
+            <a class="text-decoration-none" href="">All Clothing</a>
+            <a class="text-decoration-none" href="">Tops & T-Shirts</a>
+            <a class="text-decoration-none" href="">Shorts</a>
+            <a class="text-decoration-none" href="">Hoodies & Pullovers</a>
+            <a class="text-decoration-none" href="">Joggers & Sweatpants</a>
+            <a class="text-decoration-none" href="">Sports Bras</a>
+            <a class="text-decoration-none" href="">Pants & Tights</a>
+            <a class="text-decoration-none" href="">Socks</a>
+            <a class="text-decoration-none" href="">Yoga</a>
+            <a class="text-decoration-none" href="">NikeLab</a>
+            <a class="text-decoration-none" href="">Plus Size</a>
+            <a class="text-decoration-none" href="">Big & Tall</a>
+            <a class="text-decoration-none" href="">Sale Clothing</a>
+          </div>
+          <div
+            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
+            href="">
+            <a class="text-decoration-none" href="">Kids</a>
+            <a class="text-decoration-none" href="">Infant & Toddler Shoes</a>
+            <a class="text-decoration-none" href="">Kids Shoes</a>
+            <a class="text-decoration-none" href="">Kids Basketball Shoes</a>
+            <a class="text-decoration-none" href="">Kids Running Shoes</a>
+            <a class="text-decoration-none" href="">Kids Jordan Shoes</a>
+            <a class="text-decoration-none" href="">Kids Clothing</a>
+            <a class="text-decoration-none" href="">Kids Backpacks</a>
+            <a class="text-decoration-none" href="">Kids Socks</a>
+            <a class="text-decoration-none" href="">Kids Sale</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categoriess d-flex d-sm-none df d-flex justify-content-start align-content-center">
+      <div class="menu">
+        <div class="headermenu d-flex justify-content-center align-items-center gap-4">
+          <a class="text-decoration-none text-dark menulink" href="">Find a Store</a>
+          <a class="text-decoration-none text-dark menulink" href="">Help</a>
+          <a class="text-decoration-none text-dark menulink" href="">Join Us</a>
+          <a class="text-decoration-none text-dark menulink" href="">Sign In</a>
+        </div>
+        <div class="categoriesmenu d-flex flex-column justify-content-center align-items-start">
+          <a class="text-decoration-none text-black" href="">Featured</a>
+          <a class="text-decoration-none text-black" href="">Shoes</a>
+          <a class="text-decoration-none text-black" href="">Clothing</a>
+          <a class="text-decoration-none text-black" href="">Clothing</a>
+          <a class="text-decoration-none text-black" href="">Kids</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footergold mt-5 "></div>
+
   </section>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -326,6 +421,39 @@
       }
     });
   </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwipertwo", {
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }, breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="./js/main.js"></script>
 </body>
