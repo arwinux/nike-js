@@ -368,7 +368,7 @@
     height: 700px;
   }
 
-  .swiper-slide {
+  div.swiper>div.swiper-wrapper>div.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -377,7 +377,7 @@
     align-items: center;
   }
 
-  .swiper-slide img {
+  div.swiper>div.swiper-wrapper>div.swiper-slide>img {
     display: block;
     width: 100%;
     height: 100%;
