@@ -13,13 +13,11 @@
 <header>
   <div class="topheader w-100 d-none d-lg-flex justify-content-between align-items-center">
     <div class="brandlist w-50 h-100 d-flex justify-content-start align-items-center">
-      <div class="brands d-flex gap-4 justify-content-center align-items-center">
-        <a class="brand" href="#"><img src="./assets/images/brands/brand1.svg" alt=""></a>
-        <a class="brand" href="#"><img src="./assets/images/brands/brand2.svg" alt=""></a>
+      <div id="brands" class="brands d-flex gap-4 justify-content-center align-items-center">
       </div>
     </div>
-    <div class="menu w-50 d-flex justify-content-end gap-3 align-content-center">
-      <a class="text-decoration-none text-dark menulink" href="">Find a Store</a>
+    <div id="topheader" class="menu w-50 d-flex justify-content-end gap-3 align-content-center">
+      <!-- <a class="text-decoration-none text-dark menulink" href="">Find a Store</a>
 
       <div class="help-container">
         <a class="text-decoration-none text-dark help-link menulink" href="#">Help</a>
@@ -39,39 +37,24 @@
       </div>
 
       <a class="text-decoration-none text-dark menulink" href="">Join Us</a>
-      <a class="text-decoration-none text-dark menulink" href="">Sign In</a>
+      <a class="text-decoration-none text-dark menulink" href="">Sign In</a> -->
     </div>
   </div>
   <div class="mainheader bg-white d-flex justify-content-between align-items-center">
-    <div class="logo">
-      <img class="" src="./assets/images/logoblack.jpeg" alt="">
+    <div id="headerlogo" class="logo">
     </div>
 
     <nav class="categories d-none d-md-flex justify-content-center align-items-center">
-      <ul class="d-flex none navbar-nav flex-row justify-content-center align-items-center gap-4">
-        <li><a class="text-decoration-none text-dark category" href="">New</a></li>
-        <li><a class="text-decoration-none text-dark category" href="">Men</a></li>
-        <li><a class="text-decoration-none text-dark category" href="">Women</a></li>
-        <li><a class="text-decoration-none text-dark category" href="">Kids</a></li>
-        <li><a class="text-decoration-none text-dark category" href="">Jordan</a></li>
-        <li><a class="text-decoration-none text-dark category" href="">Sale</a></li>
+      <ul id="mainmenulinks" class="d-flex none navbar-nav flex-row justify-content-center align-items-center gap-4">
       </ul>
     </nav>
 
     <div class="productscontrol d-flex gap-4 justify-content-end align-items-center">
-      <div class="searchandinput h-100 rounded-5 d-flex justify-content-center align-content-center">
-        <a class="search d-flex justify-content-center align-content-center">
-          <img class="rounded-5 w-75" src="./assets/images/header/search.svg" alt="">
-        </a>
+      <div id="searchbtn" class="searchandinput h-100 rounded-5 d-flex justify-content-center align-content-center">
         <input class="border-0 rounded-end-5" placeholder="Search" type="text" name="" id="">
       </div>
-      <div class="controls d-flex justify-content-center align-items-center">
-        <a class="control rounded-circle d-flex justify-content-center align-content-center" href="#">
-          <img class="w-100" src="./assets/images/header/favorite.svg" alt="">
-        </a>
-        <a class="control rounded-circle d-flex justify-content-center align-content-center" href="#">
-          <img class="w-100" src="./assets/images/header/cart.svg" alt="">
-        </a>
+      <div id="controls" class="controls d-flex justify-content-center align-items-center">
+
         <!-- Offcanvas Sidebar -->
         <div class="offcanvas offcanvas-end" id="demo">
           <div class="offcanvas-header">
@@ -79,130 +62,22 @@
           </div>
           <div class="offcanvas-body">
             <nav class="categories d-flex justify-content-start align-items-center">
-              <ul class="d-flex none navbar-nav flex-column justify-content-center align-items-start gap-4">
-                <li><a class="text-decoration-none text-dark category h3" href="">New</a></li>
-                <li><a class="text-decoration-none text-dark category h3" href="">Men</a></li>
-                <li><a class="text-decoration-none text-dark category h3" href="">Women</a></li>
-                <li><a class="text-decoration-none text-dark category h3" href="">Kids</a></li>
-                <li><a class="text-decoration-none text-dark category h3" href="">Jordan</a></li>
-                <li><a class="text-decoration-none text-dark category h3" href="">Sale</a></li>
+              <ul id="offcanvasmenux"
+                class="d-flex none navbar-nav flex-column justify-content-center align-items-start gap-4">
               </ul>
             </nav>
           </div>
         </div>
-
-        <!-- Button to open the offcanvas sidebar -->
-        <a class="control rounded-circle d-flex justify-content-center align-content-center d-md-none d-flex"
-          type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" href="#">
-          <img class="w-100" src="./assets/images/header/menu.svg" alt="">
-        </a>
       </div>
     </div>
   </div>
-  <!-- <div class="glassbackground w-100 vh-100">
-    <div class="categoriessubmenu w-100 bg-white d-flex justify-content-center align-items-start">
-      <div class="sub d-flex w-75 bg-white flex-wrap justify-content-center align-items-start">
-        <div class="submenu d-flex flex-wrap flex-column justify-content-center align-items-start">
-          <div class=" align-self-start h4">New</div>
-          <div class="submenustitles d-flex gap-2 flex-wrap flex-column justify-content-center align-items-start">
-            <a class="text-decoration-none" href="">New Arrivals</a>
-            <a class="text-decoration-none" href="">Best Sellers</a>
-            <a class="text-decoration-none" href="">Latest Drops</a>
-            <a class="text-decoration-none" href="">SNKRS Launch Calendar</a>
-            <a class="text-decoration-none" href="">AJ11 "LNY" & More</a>
-          </div>
-        </div>
-        <div class="submenu d-flex flex-column justify-content-start align-items-start">
-          <div class=" align-self-start h4">Trending</div>
-          <div class="submenustitles d-flex gap-2 flex-wrap flex-column justify-content-center align-items-start">
-            <a class="text-decoration-none" href="">ACG Essentials</a>
-            <a class="text-decoration-none" href="">Retro Running</a>
-            <a class="text-decoration-none" href="">Nike Style By</a>
-            <a class="text-decoration-none" href="">Shop Sport</a>
-          </div>
-        </div>
-        <div class="submenu d-flex flex-column justify-content-start align-items-start">
-          <div class=" align-self-start h4">Shop Classics</div>
-          <div class="submenustitles d-flex gap-2 flex-wrap flex-column justify-content-center align-items-start">
-            <a class="text-decoration-none" href="">Dunk</a>
-            <a class="text-decoration-none" href="">Air Jordan 1</a>
-            <a class="text-decoration-none" href="">Air Force</a>
-            <a class="text-decoration-none" href="">Air Max</a>
-            <a class="text-decoration-none" href="">Blazer</a>
-            <a class="text-decoration-none" href="">Vomero</a>
-          </div>
-        </div>
-        <div class="submenu d-flex flex-column justify-content-start align-items-start">
-          <div class=" align-self-start h4">Explore</div>
-          <div class="submenustitles d-flex gap-1 flex-wrap flex-column justify-content-center align-items-start">
-            <a class="text-decoration-none" href="">Bra Finder</a>
-            <a class="text-decoration-none" href="">Product Care</a>
-            <a class="text-decoration-none" href="">Member Rewards</a>
-            <a class="text-decoration-none" href="">Buying Guides</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </header>
 
 <body>
   <section>
     <!-- Swiper -->
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
-          <video class="" user-select-none muted autoplay src="./assets/videos/slide1.mp4"></video>
-          <div
-            class="titleanddescriptionbtn mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
-            <div class="title">
-              <p class="m-0 p-0">GET COMFORTABLE WITH WINNING</p>
-            </div>
-            <div class="description">
-              <p>Comfort you want with support you need to power your wins.</p>
-            </div>
-            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
-          </div>
-        </div>
-        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
-          <img class="" src="./assets/images/slider/slide2.jpeg" alt="">
-          <div
-            class="titleanddescriptionbtn  mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
-            <div class="title">
-              <p class="m-0 p-0">NIKE RUNNING'S LATEST</p>
-            </div>
-            <div class="description">
-              <p>Everything you'll need for every mile.</p>
-            </div>
-            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
-          </div>
-        </div>
-        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
-          <img class="" src="./assets/images/slider/slide3.jpeg" alt="">
-          <div
-            class="titleanddescriptionbtn mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
-            <div class="title">
-              <p class="m-0 p-0">FEEL MORE ALIVE</p>
-            </div>
-            <div class="description">
-              <p>Get outside in adventure-ready gear from ACG.</p>
-            </div>
-            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
-          </div>
-        </div>
-        <div class="swiper-slide position-relative d-flex justify-content-center align-items-end">
-          <img class="" src="./assets/images/slider/slide4.jpeg" alt="">
-          <div
-            class="titleanddescriptionbtn mb-5 text-white position-absolute d-flex flex-column justify-content-center align-items-center">
-            <div class="title">
-              <p class="m-0 p-0">JORDAN HEIR SERIES</p>
-            </div>
-            <div class="description">
-              <p>Run, defend, and cut with confidence in Jordan’s lowest profile hoops style.</p>
-            </div>
-            <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
-          </div>
-        </div>
+      <div id="slidescontainer" class="swiper-wrapper">
 
       </div>
       <div class="autoplay-progress d-flex justify-content-center align-items-center gap-4">
@@ -220,76 +95,22 @@
 
     </div>
 
-    <div class="collections w-100 d-flex flex-wrap flex-row justify-content-center align-items-start">
-      <div class="collection position-relative w-50 d-flex gap-2 justify-content-start align-items-end">
-        <img class="w-100 d-none d-lg-flex" src="./assets/images/collections/nikecontainera1.jpeg" alt="">
-        <img class="w-100 d-flex d-lg-none" src="./assets/images/collections/nikecontainera2.jpeg" alt="">
-        <div
-          class="titleanddescriptionbtn m-5 text-white position-absolute d-flex flex-column justify-content-center align-items-start">
-          <div class="title">
-            <p class="m-0 p-0">Stretch Freely</p>
-          </div>
-          <div class="description">
-            <p>Women's Leggings</p>
-          </div>
-          <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
-        </div>
-      </div>
-      <div class="collection position-relative w-50 d-flex gap-2 justify-content-start align-items-end">
-        <img class="w-100 d-none d-lg-flex" src="./assets/images/collections/nikecontainerb1.jpeg" alt="">
-        <img class="w-100 d-flex d-lg-none" src="./assets/images/collections/nikecontainerb2.jpeg" alt="">
-        <div
-          class="titleanddescriptionbtn m-5 text-white position-absolute d-flex flex-column justify-content-center align-items-start">
-          <div class="title">
-            <p class="m-0 p-0">Keep it Fresh</p>
-          </div>
-          <div class="description">
-            <p>Air Force 1 '07</p>
-          </div>
-          <button type="button" class="btn bg-white rounded rounded-5">Shop</button>
-        </div>
-      </div>
+    <div id="collections" class="collections w-100 d-flex flex-wrap flex-row justify-content-center align-items-start">
+
     </div>
 
-    <div class="product w-100 vh-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="titleanddescriptionbtn m-5 text-black d-flex flex-column justify-content-center align-items-center">
-        <div class="modelname">
-          <p>P-60000</p>
-        </div>
-        <div class="title">
-          <p class="m-0 p-0">REMASTERED FOR STYLE</p>
-        </div>
-        <div class="description">
-          <p>Elevate your everyday look with the Pegasus-inspired legacy runner.</p>
-        </div>
-        <button type="button" class="btn bg-black text-white rounded rounded-5">Shop</button>
-      </div>
-      <video class="w-100 h-100" user-select-none muted autoplay src="assets/videos/p6000.mp4"></video>
+    <div id="product" class="product w-100 vh-100 d-flex flex-column justify-content-center align-items-center">
+
     </div>
 
     <div class="shopbyclassics w-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="title w-100 d-flex justify-content-start align-items-center">
-        <p>SHOP BY CLASSICS</p>
+      <div id="shoptitle" class="title w-100 d-flex justify-content-start align-items-center">
       </div>
 
       <div class="classicsproducts w-100 d-flex justify-content-center align-items-center">
         <!-- Swiper -->
         <div class="swiper mySwipertwo">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./assets/images/products/product1.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product2.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product3.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product4.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product5.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product6.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product7.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product1.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product2.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product3.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product4.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product5.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product6.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/images/products/product7.jpeg" alt=""></div>
+          <div id="swiperslides" class="swiper-wrapper gap-3">
           </div>
         </div>
       </div>
@@ -300,73 +121,11 @@
         <img class="w-100" src="./assets/images/logoblack.jpeg" alt="">
       </div>
       <div class="menu">
-        <div class="headermenu d-flex justify-content-center align-items-center gap-4">
-          <a class="text-decoration-none text-dark menulink" href="">Find a Store</a>
-          <a class="text-decoration-none text-dark menulink" href="">Help</a>
-          <a class="text-decoration-none text-dark menulink" href="">Join Us</a>
-          <a class="text-decoration-none text-dark menulink" href="">Sign In</a>
+        <div id="headermenu" class="headermenu d-flex justify-content-center align-items-center gap-4">
         </div>
 
-        <div class="categoriesmenu d-flex justify-content-center align-items-start">
-          <div
-            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
-            href="">
-            <a class="text-decoration-none text-black" href="">Featured</a>
-            <a class="text-decoration-none" href="">Air Force 1</a>
-            <a class="text-decoration-none" href="">Jordan 1</a>
-            <a class="text-decoration-none" href="">Metcon</a>
-            <a class="text-decoration-none" href="">Air Max 270</a>
-            <a class="text-decoration-none" href="">Air Max 97</a>
-            <a class="text-decoration-none" href="">Air Max 90</a>
-            <a class="text-decoration-none" href="">Blazer</a>
-            <a class="text-decoration-none" href="">Pegasus</a>
-          </div>
-          <div
-            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
-            href="">
-            <a class="text-decoration-none text-black" href="">Shoes</a>
-            <a class="text-decoration-none" href="">All Shoes</a>
-            <a class="text-decoration-none" href="">Jordan Shoes</a>
-            <a class="text-decoration-none" href="">Running Shoes</a>
-            <a class="text-decoration-none" href="">Basketball Shoes</a>
-            <a class="text-decoration-none" href="">Tennis Shoes</a>
-            <a class="text-decoration-none" href="">Training Shoes</a>
-            <a class="text-decoration-none" href="">Custom Shoes</a>
-            <a class="text-decoration-none" href="">Sale Shoes</a>
-            <a class="text-decoration-none" href="">Soccer Cleats</a>
-          </div>
-          <div
-            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
-            href="">
-            <a class="text-decoration-none" href="">Clothing</a>
-            <a class="text-decoration-none" href="">All Clothing</a>
-            <a class="text-decoration-none" href="">Tops & T-Shirts</a>
-            <a class="text-decoration-none" href="">Shorts</a>
-            <a class="text-decoration-none" href="">Hoodies & Pullovers</a>
-            <a class="text-decoration-none" href="">Joggers & Sweatpants</a>
-            <a class="text-decoration-none" href="">Sports Bras</a>
-            <a class="text-decoration-none" href="">Pants & Tights</a>
-            <a class="text-decoration-none" href="">Socks</a>
-            <a class="text-decoration-none" href="">Yoga</a>
-            <a class="text-decoration-none" href="">NikeLab</a>
-            <a class="text-decoration-none" href="">Plus Size</a>
-            <a class="text-decoration-none" href="">Big & Tall</a>
-            <a class="text-decoration-none" href="">Sale Clothing</a>
-          </div>
-          <div
-            class="category text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
-            href="">
-            <a class="text-decoration-none" href="">Kids</a>
-            <a class="text-decoration-none" href="">Infant & Toddler Shoes</a>
-            <a class="text-decoration-none" href="">Kids Shoes</a>
-            <a class="text-decoration-none" href="">Kids Basketball Shoes</a>
-            <a class="text-decoration-none" href="">Kids Running Shoes</a>
-            <a class="text-decoration-none" href="">Kids Jordan Shoes</a>
-            <a class="text-decoration-none" href="">Kids Clothing</a>
-            <a class="text-decoration-none" href="">Kids Backpacks</a>
-            <a class="text-decoration-none" href="">Kids Socks</a>
-            <a class="text-decoration-none" href="">Kids Sale</a>
-          </div>
+        <div id="categoriesmenu" class="categoriesmenu d-flex justify-content-center align-items-start">
+
         </div>
       </div>
     </div>
@@ -379,11 +138,7 @@
           <a class="text-decoration-none text-dark menulink" href="">Sign In</a>
         </div>
         <div class="categoriesmenu d-flex flex-column justify-content-center align-items-start">
-          <a class="text-decoration-none text-black" href="">Featured</a>
-          <a class="text-decoration-none text-black" href="">Shoes</a>
-          <a class="text-decoration-none text-black" href="">Clothing</a>
-          <a class="text-decoration-none text-black" href="">Clothing</a>
-          <a class="text-decoration-none text-black" href="">Kids</a>
+
         </div>
       </div>
     </div>
@@ -396,49 +151,22 @@
     <hr class="d-none d-lg-flex">
     <div class="footer d-flex flex-column justify-content-center align-items-start">
       <div class="footermenu d-none d-lg-flex d-flex justify-content-center align-items-start">
-        <div
+        <div id="footermenuone"
           class="menuf text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
           href="">
-          <a class="text-decoration-none" href="">Resources</a>
-          <a class="text-decoration-none" href="">Gift Cards</a>
-          <a class="text-decoration-none" href="">Find a Store</a>
-          <a class="text-decoration-none" href="">Membership</a>
-          <a class="text-decoration-none" href="">Nike Journal</a>
-          <a class="text-decoration-none" href="">Site Feedback</a>
         </div>
-        <div
+        <div id="footermenutwo"
           class="menuf text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
           href="">
-          <a class="text-decoration-none" href="">Help</a>
-          <a class="text-decoration-none" href="">Get Help</a>
-          <a class="text-decoration-none" href="">Order Status</a>
-          <a class="text-decoration-none" href="">Shipping and Delivery</a>
-          <a class="text-decoration-none" href="">Returns</a>
-          <a class="text-decoration-none" href="">Order Cancellation</a>
-          <a class="text-decoration-none" href="">Payment Options</a>
-          <a class="text-decoration-none" href="">Gift Card Balance</a>
-          <a class="text-decoration-none" href="">Contact Us</a>
         </div>
-        <div
+        <div id="footermenuthree"
           class="menuf text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
           href="">
-          <a class="text-decoration-none" href="">Company</a>
-          <a class="text-decoration-none" href="">About Nike</a>
-          <a class="text-decoration-none" href="">News</a>
-          <a class="text-decoration-none" href="">Careers</a>
-          <a class="text-decoration-none" href="">Investors</a>
-          <a class="text-decoration-none" href="">Purpose</a>
-          <a class="text-decoration-none" href="">Sustainability</a>
         </div>
-        <div
+        <div id="footermenufour"
           class="menuf text-decoration-none text-dark menulin d-flex flex-column justify-content-center align-items-start gap-2"
           href="">
-          <a class="text-decoration-none" href="">Promotions & Discounts</a>
-          <a class="text-decoration-none" href="">Student</a>
-          <a class="text-decoration-none" href="">Military</a>
-          <a class="text-decoration-none" href="">Teacher</a>
-          <a class="text-decoration-none" href="">First Responders & Medical Professionals</a>
-          <a class="text-decoration-none" href="">Birthday</a>
+
         </div>
       </div>
       <div class="accordion w-100 d-flex d-lg-none flex-column" id="accordionExample">
@@ -451,12 +179,8 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse bg-white border border-0"
             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body d-flex flex-column">
-              <a class="text-decoration-none" href="">Gift Cards</a>
-              <a class="text-decoration-none" href="">Find a Store</a>
-              <a class="text-decoration-none" href="">Membership</a>
-              <a class="text-decoration-none" href="">Nike Journal</a>
-              <a class="text-decoration-none" href="">Site Feedback</a>
+            <div id="collapseone" class="accordion-body d-flex flex-column">
+
             </div>
           </div>
         </div>
@@ -470,15 +194,8 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse bg-white border border-0"
             aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body d-flex flex-column">
-              <a class="text-decoration-none" href="">Get Help</a>
-              <a class="text-decoration-none" href="">Order Status</a>
-              <a class="text-decoration-none" href="">Shipping and Delivery</a>
-              <a class="text-decoration-none" href="">Returns</a>
-              <a class="text-decoration-none" href="">Order Cancellation</a>
-              <a class="text-decoration-none" href="">Payment Options</a>
-              <a class="text-decoration-none" href="">Gift Card Balance</a>
-              <a class="text-decoration-none" href="">Contact Us</a>
+            <div id="collapsetwo" class="accordion-body d-flex flex-column">
+
             </div>
           </div>
         </div>
@@ -492,14 +209,8 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse bg-white border border-0"
             aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body d-flex flex-column">
+            <div id="collapsethree" class="accordion-body d-flex flex-column">
 
-              <a class="text-decoration-none" href="">About Nike</a>
-              <a class="text-decoration-none" href="">News</a>
-              <a class="text-decoration-none" href="">Careers</a>
-              <a class="text-decoration-none" href="">Investors</a>
-              <a class="text-decoration-none" href="">Purpose</a>
-              <a class="text-decoration-none" href="">Sustainability</a>
             </div>
           </div>
         </div>
@@ -513,12 +224,8 @@
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse bg-white border border-0"
             aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-            <div class="accordion-body d-flex flex-column">
-              <a class="text-decoration-none" href="">Student</a>
-              <a class="text-decoration-none" href="">Military</a>
-              <a class="text-decoration-none" href="">Teacher</a>
-              <a class="text-decoration-none" href="">First Responders & Medical Professionals</a>
-              <a class="text-decoration-none" href="">Birthday</a>
+            <div id="collapsefour" class="accordion-body d-flex flex-column">
+
             </div>
           </div>
         </div>
@@ -526,15 +233,8 @@
       </div>
 
       <div class="copyrightmenu w-100 d-flex justify-content-start align-items-center">
-        <div class="menuf d-flex flex-wrap justify-content-start align-items-center gap-4">
-          <a class="text-decoration-none menulink" href="">&copy 2025 Nike, Inc. All Rights Reserved</a>
-          <a class="text-decoration-none menulink" href="">Guides</a>
-          <a class="text-decoration-none menulink" href="">Terms of Sale</a>
-          <a class="text-decoration-none menulink" href="">Terms of Use</a>
-          <a class="text-decoration-none menulink" href="">Nike Privacy Policy</a>
-          <a class="text-decoration-none menulink" href="">Nike Privacy Policy</a>
-          <a class="text-decoration-none menulink" href="">Your Privacy Choices</a>
-          <a class="text-decoration-none menulink" href="">CA Supply Chains Act</a>
+        <div id="footerinfo" class="menuf d-flex flex-wrap justify-content-start align-items-center gap-4">
+
         </div>
       </div>
     </div>
@@ -543,8 +243,7 @@
   </footer>
 
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
     const progressCircle = document.querySelector(".autoplay-progress svg");
@@ -574,8 +273,7 @@
   </script>
 
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwipertwo", {
@@ -604,7 +302,7 @@
       },
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="node_modules/axios/dist/axios.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="./js/main.js"></script>
 </body>
